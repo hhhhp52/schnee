@@ -21,5 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build project And Deploy
-        run: npm run deploy
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm run deploy
       - run: echo "🍏 This job's status is ${{ job.status }}."
