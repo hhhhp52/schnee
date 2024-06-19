@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hhhhp52.github.io/static/css/main.539aab0b.chunk.css",
+    "main.js": "/hhhhp52.github.io/static/js/main.8c385638.chunk.js",
+    "main.js.map": "/hhhhp52.github.io/static/js/main.8c385638.chunk.js.map",
+    "runtime-main.js": "/hhhhp52.github.io/static/js/runtime-main.06b126cb.js",
+    "runtime-main.js.map": "/hhhhp52.github.io/static/js/runtime-main.06b126cb.js.map",
+    "static/js/2.66af17a0.chunk.js": "/hhhhp52.github.io/static/js/2.66af17a0.chunk.js",
+    "static/js/2.66af17a0.chunk.js.map": "/hhhhp52.github.io/static/js/2.66af17a0.chunk.js.map",
+    "index.html": "/hhhhp52.github.io/index.html",
+    "static/css/main.539aab0b.chunk.css.map": "/hhhhp52.github.io/static/css/main.539aab0b.chunk.css.map",
+    "static/js/2.66af17a0.chunk.js.LICENSE.txt": "/hhhhp52.github.io/static/js/2.66af17a0.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/hhhhp52.github.io/static/media/schnee.5394caad.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06b126cb.js",
+    "static/js/2.66af17a0.chunk.js",
+    "static/css/main.539aab0b.chunk.css",
+    "static/js/main.8c385638.chunk.js"
+  ]
+}
