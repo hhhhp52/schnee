@@ -1,0 +1,39 @@
+/*
+React Body Has margin: 8px as default
+*/
+body {
+    margin: 0;
+}
+
+.header {
+    /*position : sticky，
+    並且一定要定義目標位置 left / right / top / bottom 才會出現固定效果！*/
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /*高*/
+    /*height: 150px;*/
+    /*寬*/
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main {
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    /*position: sticky;*/
+    /*bottom: 0;*/
+    background-color: aqua;
+    width: 100%;
+    border-top: black solid 1px;
+}

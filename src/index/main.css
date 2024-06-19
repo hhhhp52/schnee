@@ -1,0 +1,59 @@
+.section {
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.skill-panel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    grid-auto-rows: auto;
+}
+
+.skill-object {
+    border: lightgray solid 1px;
+    padding: 8px;
+    height: 200px;
+    min-width: 100px;
+    width: 200px;
+}
+
+.skill-info {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+    height: 20px;
+    border-bottom: aquamarine dashed 1px;
+}
+
+.skill-content {
+    font-style: italic;
+    height: auto;
+}
+
+.work-object {
+    display: flex;
+    border-bottom: lightgray solid 1px;
+    padding: 8px;
+}
+
+.work-info {
+    flex: none;
+    font-size: 16px;
+    width: 200px;
+    min-width: 100px;
+    border-right: aquamarine dashed 1px;
+}
+
+.word-content {
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.content{
+    font-size: 14px;
+}

@@ -1,0 +1,44 @@
+.profile {
+    display: flex;
+}
+
+.profile-photo {
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    background: url('./images/schnee.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+.profile-content {
+    flex: none;
+    width: 250px;
+    min-width: 200px;
+    height: 150px;
+}
+
+.link{
+    /*background-color: coral;*/
+    flex: 1;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+.link-style {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-style: italic;
+}
+
+.link-icon {
+    width: 20px;
+    height: 20px;
+}
