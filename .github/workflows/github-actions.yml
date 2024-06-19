@@ -19,5 +19,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: npm i react-scripts
+      - run: n 16
       - run: npm run deploy
       - run: echo "🍏 This job's status is ${{ job.status }}."
