@@ -18,6 +18,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: npm i react-scripts && npm audit fix --force
+      - run: npm i react-scripts
+      - run: npm audit fix --force
       - run: npm run deploy
       - run: echo "🍏 This job's status is ${{ job.status }}."
