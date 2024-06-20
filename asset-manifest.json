@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/schnee/static/css/main.f2ec9203.chunk.css",
-    "main.js": "/schnee/static/js/main.8c385638.chunk.js",
-    "main.js.map": "/schnee/static/js/main.8c385638.chunk.js.map",
+    "main.css": "/schnee/static/css/main.7433ef46.chunk.css",
+    "main.js": "/schnee/static/js/main.05142922.chunk.js",
+    "main.js.map": "/schnee/static/js/main.05142922.chunk.js.map",
     "runtime-main.js": "/schnee/static/js/runtime-main.7b4cf410.js",
     "runtime-main.js.map": "/schnee/static/js/runtime-main.7b4cf410.js.map",
     "static/js/2.66af17a0.chunk.js": "/schnee/static/js/2.66af17a0.chunk.js",
     "static/js/2.66af17a0.chunk.js.map": "/schnee/static/js/2.66af17a0.chunk.js.map",
     "index.html": "/schnee/index.html",
-    "static/css/main.f2ec9203.chunk.css.map": "/schnee/static/css/main.f2ec9203.chunk.css.map",
+    "static/css/main.7433ef46.chunk.css.map": "/schnee/static/css/main.7433ef46.chunk.css.map",
     "static/js/2.66af17a0.chunk.js.LICENSE.txt": "/schnee/static/js/2.66af17a0.chunk.js.LICENSE.txt",
-    "static/media/header.css": "/schnee/static/media/schnee.5394caad.jpg"
+    "static/media/header.css": "/schnee/static/media/schnee.c2da2228.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.7b4cf410.js",
     "static/js/2.66af17a0.chunk.js",
-    "static/css/main.f2ec9203.chunk.css",
-    "static/js/main.8c385638.chunk.js"
+    "static/css/main.7433ef46.chunk.css",
+    "static/js/main.05142922.chunk.js"
   ]
 }
