@@ -10,21 +10,29 @@
     align-items: center;
     justify-content: center;
     grid-template: 200px / auto auto auto auto;
+
 }
 
 .skill-object {
-    border: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
     height: 150px;
     min-width: 100px;
     width: 200px;
+    background: sandybrown;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .skill-info {
-    font-size: 16px;
-    padding-left: 5px;
+    font-size: 18px;
     padding-bottom: 12px;
     height: 20px;
-    border-bottom: aquamarine dashed 1px;
+    background: saddlebrown;
+    text-align: center;
+    border-radius: 5%;
+
 }
 
 .skill-content {
@@ -39,6 +47,8 @@
     align-items: center;
     justify-content: center;
     grid-template: auto / auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .work-object {
@@ -63,7 +73,7 @@
 }
 
 h2 {
-    padding-left: 10px;
+    text-align: center;
 }
 
 @media (min-width: 481px) and (max-width: 840px) {
@@ -90,10 +100,6 @@ h2 {
 
 
 @media (max-width: 480px) {
-    h2 {
-        padding-left: 0;
-        text-align: center;
-    }
 
     .skill-panel {
         grid-template: auto / auto;
