@@ -1,4 +1,10 @@
-.profile-photo {
+.profile {
+    display: flex;
+}
+
+.profile-photo-object {
+    width: 150px;
+    height: 150px;
     background: url('./images/schnee.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -6,10 +12,18 @@
 }
 
 .profile-content {
-    text-align:center;
+    flex: none;
+    width: 250px;
+    min-width: 200px;
+    height: 150px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: left;
 }
 
 .link {
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -24,58 +38,29 @@
     font-style: italic;
 }
 
-@media (min-width: 481px) {
-    .profile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .profile-photo {
-        top: 20px;
-        width: 150px;
-        height: 150px;
-    }
-
-    .profile-content {
-        flex: none;
-        width: 250px;
-        min-width: 200px;
-        height: 150px;
-        font-size: 16px;
-        padding-left: 20px;
-        margin-left: 10px;
-        text-align: left;
-    }
-
-    .link {
-        padding: 10px;
-        display: grid;
-        width: 150px;
-        height: 150px;
-    }
-}
-
 
 @media (max-width: 480px) {
     .profile {
         display: grid;
-        grid-column: 1 / 1;
-        align-items: center;
-        justify-content: center;
+        grid-template: auto / auto;
     }
-    .profile-photo-section {
+
+    .profile-photo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .profile-photo {
+
+    .profile-photo-object {
         width: 100px;
         height: 100px;
     }
     .profile-content {
+        width: 250px;
+        height: auto;
+        padding-left: 0;
+        text-align: center;
         font-size: 14px;
-        text-align:center;
     }
 
     .link {

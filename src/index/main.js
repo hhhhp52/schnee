@@ -15,75 +15,41 @@ export class Main extends React.Component {
                                 <div className="skill-info">Programming Language</div>
                                 <div className="skill-content">
                                     <ul>
-                                        <li>
-                                            <span className="content">Python</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Golang</span>
-                                        </li>
+                                        <li>Python</li>
+                                        <li>Golang</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">
-                                    <span>Database</span>
-                                </div>
+                                <div className="skill-info">Database</div>
                                 <div className="skill-content">
                                     <ul>
-                                        <li>
-                                            <span className="content">PostgreSQL</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Redis</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">MySQL</span>
-                                        </li>
+                                        <li>PostgreSQL</li>
+                                        <li>Redis</li>
+                                        <li>MySQL</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">
-                                    <span>Other</span>
-                                </div>
+                                <div className="skill-info">Other</div>
                                 <div className="skill-content">
                                     <ul>
-                                        <li>
-                                            <span className="content">Kafka</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Debezium</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">AWS</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">GRPC</span>
-                                        </li>
+                                        <li>Kafka</li>
+                                        <li>Debezium</li>
+                                        <li>AWS</li>
+                                        <li>GRPC</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">
-                                    <span>Personality</span>
-                                </div>
+                                <div className="skill-info">Personality</div>
                                 <div className="skill-content">
                                     <ul>
-                                        <li>
-                                            <span className="content">Collaboration</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Mediatory</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Empathy</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Flexibility</span>
-                                        </li>
-                                        <li>
-                                            <span className="content">Creativity</span>
-                                        </li>
+                                        <li>Collaboration</li>
+                                        <li>Mediatory</li>
+                                        <li>Empathy</li>
+                                        <li>Flexibility</li>
+                                        <li>Creativity</li>
                                     </ul>
                                 </div>
                             </div>
@@ -93,88 +59,87 @@ export class Main extends React.Component {
                 <div>
                     <h2>Experience</h2>
                     <div className="section">
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Senior Backend Engineer</strong></p>
-                                <p>H2 Inc.</p>
-                                <p><em>Feb. 2023 – Mar. 2024</em></p>
+                        <div className="work-panel">
+                            <div className="work-object">
+                                <div className="work-info">
+                                    <p><strong>Senior Backend Engineer</strong></p>
+                                    <p>H2 Inc.</p>
+                                    <p><em>Feb. 2023 – Mar. 2024</em></p>
+                                </div>
+                                <div className="work-content">
+                                    <ul>
+                                        <li>Spearheaded the refactoring of long-time APIs, resulting in a 20% reduction
+                                            in
+                                            request time.
+                                        </li>
+                                        <li>Revamped the data transfer tool to enhance product stability and ensure
+                                            accurate
+                                            information.
+                                        </li>
+                                        <li>Contributed to early product design, providing feasibility planning and
+                                            suggestions.
+                                        </li>
+                                        <li>Offering ongoing support to team members, optimizing development efficiency.
+                                        </li>
+                                        <li>Led product adjustments, development, and demand confirmation for back-end
+                                            services.
+                                        </li>
+                                        <li>Supported the timely market release of Egyptian and Korean products.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>
-                                        <span className="content">Spearheaded the refactoring of long-time APIs, resulting in a 20% reduction in request time.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Revamped the data transfer tool to enhance product stability and ensure accurate information.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Contributed to early product design, providing feasibility planning and suggestions.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Offering ongoing support to team members, optimizing development efficiency.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Led product adjustments, development, and demand confirmation for back-end services.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Supported the timely market release of Egyptian and Korean products.</span>
-                                    </li>
-                                </ul>
+                            <div className="work-object">
+                                <div className="work-info">
+                                    <p><strong>Backend Engineer</strong></p>
+                                    <p>H2 Inc.</p>
+                                    <p><em>Jan. 2020 – Feb. 2023</em></p>
+                                </div>
+                                <div className="work-content">
+                                    <ul>
+                                        <li>Implemented projects such as ClinicPromotion, Telemedicine, and
+                                            Self-Titration.
+                                        </li>
+                                        <li>Designed and maintained the architecture for Health2sync, HealthPass, and
+                                            SyncPoint.
+                                        </li>
+                                        <li>Managed the development of Health2sync, boasting one million users and fifty
+                                            thousand daily active users.
+                                        </li>
+                                        <li>Assisted in structuring projects and provided technical support to new team
+                                            members.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Backend Engineer</strong></p>
-                                <p>H2 Inc.</p>
-                                <p><em>Jan. 2020 – Feb. 2023</em></p>
+                            <div className="work-object">
+                                <div className="work-info">
+                                    <p><strong>Junior Golang Web Engineer</strong></p>
+                                    <p>AuroraTech
+                                        Inc.</p>
+                                    <p><em>Jul. 2019 – Jan. 2020</em></p>
+                                </div>
+                                <div className="work-content">
+                                    <ul>
+                                        <li>Developed the payment module, integrating third-party payment gateways for
+                                            convenience store codes, bank virtual accounts, and credit cards.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>
-                                        <span className="content">Implemented projects such as ClinicPromotion, Telemedicine, and Self-Titration.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Designed and maintained the architecture for Health2sync, HealthPass, and SyncPoint.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Managed the development of Health2sync, boasting one million users and fifty thousand daily active users.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Assisted in structuring projects and provided technical support to new team members.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Junior Golang Web Engineer</strong></p>
-                                <p>AuroraTech
-                                    Inc.</p>
-                                <p><em>Jul. 2019 – Jan. 2020</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>
-                                        <span className="content">Developed the payment module, integrating third-party payment gateways for convenience store codes, bank virtual accounts, and credit cards.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>IT Specialist</strong></p>
-                                <p>Cathay United Bank 國泰世華商業銀行</p>
-                                <p><em>Aug. 2017 – Mar. 2019</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>
-                                        <span className="content">Developed and maintained the financial system for debit and credit.</span>
-                                    </li>
-                                    <li>
-                                        <span className="content">Possessed domain knowledge in credit and debit card systems.</span>
-                                    </li>
-                                </ul>
+                            <div className="work-object">
+                                <div className="work-info">
+                                    <p><strong>IT Specialist</strong></p>
+                                    <p>Cathay United Bank 國泰世華商業銀行</p>
+                                    <p><em>Aug. 2017 – Mar. 2019</em></p>
+                                </div>
+                                <div className="work-content">
+                                    <ul>
+                                        <li>Developed and maintained the financial system for debit and credit.</li>
+                                        <li>Possessed domain knowledge in credit and debit card systems.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

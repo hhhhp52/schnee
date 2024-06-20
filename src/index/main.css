@@ -1,23 +1,20 @@
 .section {
     align-items: center;
-    padding: 10px;
-    margin: 20px;
     font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .skill-panel {
     display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 10px;
-    grid-auto-rows: auto;
+    grid-gap: 10px 10px;
     align-items: center;
     justify-content: center;
+    grid-template: 200px / auto auto auto auto;
 }
 
 .skill-object {
     border: lightgray solid 1px;
-    padding: 8px;
-    height: 200px;
+    height: 150px;
     min-width: 100px;
     width: 200px;
 }
@@ -33,49 +30,92 @@
 .skill-content {
     font-style: italic;
     height: auto;
+    font-size: 14px;
+}
+
+
+.work-panel {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: auto / auto;
 }
 
 .work-object {
     display: flex;
+    padding: 20px;
     border-bottom: lightgray solid 1px;
-    padding: 8px;
 }
 
 .work-info {
     flex: none;
+    padding-right: 3px;
     font-size: 16px;
     width: 200px;
     min-width: 100px;
     border-right: aquamarine dashed 1px;
 }
 
-.word-content {
-    flex: none;
-    align-items: center;
-    justify-content: center;
+.work-content {
+    flex: 1;
     min-width: 300px;
-}
-
-@media (max-width: 430px) {
-    .skill-panel {
-        display: grid;
-        grid-auto-flow: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .work-info {
-        flex: none;
-        font-size: 16px;
-        width: 130px;
-        border-right: aquamarine dashed 1px;
-    }
-    .word-content {
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.content{
     font-size: 14px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 840px) {
+
+    .skill-panel {
+        grid-template: auto / auto auto;
+    }
+
+    .skill-object {
+        height: 150px;
+        width: 200px;
+    }
+
+    .work-info {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .work-content {
+        font-size: 12px;
+        min-width: 250px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .skill-panel {
+        grid-template: auto / auto;
+    }
+
+    .skill-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .skill-object {
+        height: auto;
+        width: 200px;
+    }
+
+    .work-info {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .work-content {
+        font-size: 10px;
+        min-width: 200px;
+    }
 }

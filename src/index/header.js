@@ -10,8 +10,8 @@ export class Header extends React.Component {
         return (
             <div className="header">
                 <div className="profile">
-                    <div className="profile-photo-section">
-                        <div className="profile-photo"/>
+                    <div className="profile-photo">
+                        <div className="profile-photo-object"/>
                     </div>
                     <div className="profile-content">
                         <p><strong>Wen-Ching Ruan(Schnee)</strong></p>
