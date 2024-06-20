@@ -115,12 +115,22 @@ h2 {
         width: 200px;
     }
 
+    .work-object {
+        display: grid;
+        padding: 20px;
+        border-bottom: lightgray solid 1px;
+    }
+
     .work-info {
-        width: 130px;
+        width: auto;
+        min-width: 200px;
         font-size: 12px;
+        border-right: 0;
+        border-bottom: aquamarine dashed 1px;
     }
 
     .work-content {
+        flex: none;
         font-size: 10px;
         min-width: 200px;
     }

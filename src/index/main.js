@@ -115,8 +115,7 @@ export class Main extends React.Component {
                             <div className="work-object">
                                 <div className="work-info">
                                     <p><strong>Junior Golang Web Engineer</strong></p>
-                                    <p>AuroraTech
-                                        Inc.</p>
+                                    <p>AuroraTech Inc.</p>
                                     <p><em>Jul. 2019 – Jan. 2020</em></p>
                                 </div>
                                 <div className="work-content">
