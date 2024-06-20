@@ -12,7 +12,7 @@ export class Main extends React.Component {
                     <div className="section">
                         <div className="skill-panel">
                             <div className="skill-object">
-                                <div className="skill-info">Programming Language</div>
+                                <div className="skill-info"><strong>Programming</strong></div>
                                 <div className="skill-content">
                                     <ul>
                                         <li>Python</li>
@@ -21,7 +21,7 @@ export class Main extends React.Component {
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">Database</div>
+                                <div className="skill-info"><strong>Database</strong></div>
                                 <div className="skill-content">
                                     <ul>
                                         <li>PostgreSQL</li>
@@ -31,7 +31,7 @@ export class Main extends React.Component {
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">Other</div>
+                                <div className="skill-info"><strong>Other</strong></div>
                                 <div className="skill-content">
                                     <ul>
                                         <li>Kafka</li>
@@ -42,7 +42,7 @@ export class Main extends React.Component {
                                 </div>
                             </div>
                             <div className="skill-object">
-                                <div className="skill-info">Personality</div>
+                                <div className="skill-info"><strong>Personality</strong></div>
                                 <div className="skill-content">
                                     <ul>
                                         <li>Collaboration</li>
@@ -115,8 +115,7 @@ export class Main extends React.Component {
                             <div className="work-object">
                                 <div className="work-info">
                                     <p><strong>Junior Golang Web Engineer</strong></p>
-                                    <p>AuroraTech
-                                        Inc.</p>
+                                    <p>AuroraTech Inc.</p>
                                     <p><em>Jul. 2019 – Jan. 2020</em></p>
                                 </div>
                                 <div className="work-content">
