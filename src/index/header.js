@@ -10,34 +10,27 @@ export class Header extends React.Component {
         return (
             <div className="header">
                 <div className="profile">
-                    <div className="profile-photo"/>
+                    <div className="profile-photo">
+                        <div className="profile-photo-object"/>
+                    </div>
                     <div className="profile-content">
-                        <ul>
-                            <p><strong>Wen-Ching Ruan(Schnee)</strong></p>
-                            <p><strong><em>Senior Backend Engineer</em></strong></p>
-                            <p>Fu Jen University</p>
-                            {/*<p>Bachelor of Business Administration in Information Management</p>*/}
-                        </ul>
+                        <p><strong>Wen-Ching Ruan(Schnee)</strong></p>
+                        <p><strong><em>Senior Backend Engineer</em></strong></p>
+                        <p>Fu Jen University</p>
                     </div>
                     <div className="link">
-                        <div className="link-style">
+                        <a className="link-style" href="https://github.com/hhhhp52">
                             <GitHubIcon/>
-                            <a href="https://github.com/hhhhp52">
-                                <div>Github</div>
-                            </a>
-                        </div>
-                        <div className="link-style">
+                            <span className="link-name">Github</span>
+                        </a>
+                        <a className="link-style" href="https://www.linkedin.com/in/schneeheart/">
                             <LinkedInIcon/>
-                            <a href="https://www.linkedin.com/in/schneeheart/">
-                                <div>Linkedin</div>
-                            </a>
-                        </div>
-                        <div className="link-style">
+                            <span className="link-name">Linkedin</span>
+                        </a>
+                        <a className="link-style" href="mailto:hhhhp52@gmail.com">
                             <EmailIcon/>
-                            <a href="mailto:hhhhp52@gmail.com">
-                                <div>Email</div>
-                            </a>
-                        </div>
+                            <span className="link-name">Email</span>
+                        </a>
                     </div>
                 </div>
             </div>
