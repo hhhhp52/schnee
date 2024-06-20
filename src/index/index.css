@@ -5,25 +5,25 @@ body {
     margin: 0;
 }
 
-@media (min-width: 1024px) {
-    .header {
-        /*position : sticky，
-        並且一定要定義目標位置 left / right / top / bottom 才會出現固定效果！*/
-        position: sticky;
-        top: 0;
-        background-color: white;
-        /*高*/
-        /*height: 150px;*/
-        /*寬*/
-        border-bottom: solid;
-        border-bottom-color: black;
-        border-bottom-width: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
+.header {
+    /*position : sticky，
+    並且一定要定義目標位置 left / right / top / bottom 才會出現固定效果！*/
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /*高*/
+    /*height: 150px;*/
+    /*寬*/
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 
+@media (min-width: 1024px) {
     .main {
         padding: 10px;
         background-color: white;
@@ -41,24 +41,6 @@ body {
 }
 
 @media (max-width: 1023px) {
-    .header {
-        /*position : sticky，
-        並且一定要定義目標位置 left / right / top / bottom 才會出現固定效果！*/
-        position: sticky;
-        top: 0;
-        background-color: white;
-        /*高*/
-        /*height: 150px;*/
-        /*寬*/
-        border-bottom: solid;
-        border-bottom-color: black;
-        border-bottom-width: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-
     .main {
         padding: 10px;
         background-color: white;
@@ -73,4 +55,8 @@ body {
         width: 100%;
         border-top: black solid 1px;
     }
+}
+
+@media (max-width: 430px) {
+    
 }
