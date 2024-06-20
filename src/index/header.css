@@ -1,76 +1,88 @@
-.profile {
-    display: flex;
-}
-
 .profile-photo {
-    top: 20px;
-    width: 150px;
-    height: 150px;
     background: url('./images/schnee.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-
 }
 
 .profile-content {
-    flex: none;
-    width: 250px;
-    min-width: 200px;
-    height: 150px;
+    text-align:center;
 }
 
-
-.link{
-    /*background-color: coral;*/
-    flex: 1;
-    padding: 10px;
-    display: grid;
+.link {
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
 }
 
 .link-style {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.link-name{
     font-style: italic;
 }
 
-.link-icon {
-    width: 20px;
-    height: 20px;
-}
+@media (min-width: 481px) {
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-
-@media (max-width: 430px) {
     .profile-photo {
         top: 20px;
         width: 150px;
         height: 150px;
-        background: url('./images/schnee.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-
     }
 
     .profile-content {
         flex: none;
-        width: 200px;
+        width: 250px;
+        min-width: 200px;
         height: 150px;
+        font-size: 16px;
+        padding-left: 20px;
+        margin-left: 10px;
+        text-align: left;
     }
 
-    .link{
-        /*background-color: coral;*/
-        flex: 1;
+    .link {
         padding: 10px;
         display: grid;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .profile {
+        display: grid;
+        grid-column: 1 / 1;
         align-items: center;
         justify-content: center;
-        width: 30px;
-        height: 150px;
+    }
+    .profile-photo-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-content {
+        font-size: 14px;
+        text-align:center;
+    }
+
+    .link {
+        display: flex;
+    }
+
+    .link-name{
+        display: none;
     }
 }
