@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './home.css'
 import './main.css'
 import IconButton from '@mui/material/IconButton';
 import Card from '@mui/material/Card';
@@ -182,89 +182,108 @@ class Experience extends React.Component {
     }
 }
 
+function ProjectCard(props) {
+    return (
+        <div className="project-card">
+            <Card variant="outlined">
+                <CardContent>
+                    {props.value}
+                </CardContent>
+            </Card>
+        </div>
+    );
+}
 
 class Project extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
+            data: [
+                {
+                    project_name: "Test1",
+                    url:"./game"
+                },
+                {
+                    project_name: "Test2",
+                },
+                {
+                    project_name: "Test3",
+                },
+                {
+                    project_name: "Test4",
+                },
+                {
+                    project_name: "Test5",
+                },
+                {
+                    project_name: "Test6",
+                },
+                {
+                    project_name: "Test7",
+                }
+            ],
             left: 6,
             current: 0,
             right: 1,
         };
     }
 
-    handleClick(i) {
-        const current = this.state.current;
-        const left = this.state.left;
-        const right = this.state.right;
-        if (i == left) {
+    renderCard(i) {
+        return <ProjectCard value={this.state.data[i].project_name}/>;
+    }
+
+    handleClick(i: number) {
+        const left: number = this.state.left;
+        const right: number = this.state.right;
+        if (i === left) {
             this.setState({
                 left: left - 1 >= 0 ? left - 1 : 6,
                 current: i,
                 right: right - 1 >= 0 ? right - 1 : 6,
             });
-        } else if (i == right) {
+        } else if (i === right) {
             this.setState({
                 left: left + 1 <= 6 ? left + 1 : 0,
                 current: i,
                 right: right + 1 <= 6 ? right + 1 : 0,
             });
+        } else {
+            console.log("Something Wrong")
         }
     }
 
     render() {
         const left = this.state.left;
         const right = this.state.right;
+        const current = this.state.current;
         return (
             <div>
                 <h1>Project</h1>
                 <div className="section">
                     <div className="project-panel">
                         <div className="project-way">
-                            <div>
-                                <IconButton
-                                    href={"#project-" + left}
-                                    onClick={() => this.handleClick(left)}>
-                                    <ChevronLeftIcon/>
-                                </IconButton>
-                            </div>
-                            <div>{left}</div>
+                            <IconButton
+                                onClick={() => this.handleClick(left)}
+                                size="large">
+                                <ChevronLeftIcon fontSize="inherit"/>
+                            </IconButton>
                         </div>
                         <div className="project-screen">
                             <div className="project-shower">
-                                <div className="project-card" id="project-0">
-                                    <Card variant="outlined">Card1</Card>
-                                </div>
-                                <div className="project-card" id="project-1">
-                                    <Card variant="outlined">Card2</Card>
-                                </div>
-                                <div className="project-card" id="project-2">
-                                    <Card variant="outlined">Card3</Card>
-                                </div>
-                                <div className="project-card" id="project-3">
-                                    <Card variant="outlined">Card4</Card>
-                                </div>
-                                <div className="project-card" id="project-4">
-                                    <Card variant="outlined">Card5</Card>
-                                </div>
-                                <div className="project-card" id="project-5">
-                                    <Card variant="outlined">Card6</Card>
-                                </div>
-                                <div className="project-card" id="project-6">
-                                    <Card variant="outlined">Card7</Card>
-                                </div>
+                                {this.renderCard(left)}
+                                {this.renderCard(current)}
+                                {this.renderCard(right)}
                             </div>
                         </div>
                         <div className="project-way">
                             <div>
                                 <IconButton
-                                    href={"#project-" + right}
-                                    onClick={() => this.handleClick(right)}>
-                                    <ChevronRightIcon/>
+                                    onClick={() => this.handleClick(right)}
+                                    size="large">
+                                    <ChevronRightIcon fontSize="inherit"/>
                                 </IconButton>
                             </div>
-                            <div>{right}</div>
                         </div>
                     </div>
                 </div>

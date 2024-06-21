@@ -131,3 +131,9 @@ class Game extends React.Component {
         );
     }
 }
+
+export default function GamePage() {
+    return(
+        <Game/>
+    )
+}
