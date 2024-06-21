@@ -6,9 +6,7 @@ export class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                <div className="set-center">
-                    <p>Copyright © 2024 Schnee Ruan</p>
-                </div>
+                <span><strong>--- Copyright © 2024 Schnee Ruan ---</strong></span>
             </div>
         )
     }
