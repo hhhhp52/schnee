@@ -1,0 +1,34 @@
+{
+  "title": {
+    "skill": "Skill",
+    "experience": "Experience",
+    "project": "Project",
+    "introduction": "Introduction"
+  },
+  "project": [
+    {
+      "name": "GithubPage",
+      "url": "https://github.com/hhhhp52/schnee",
+      "type": "self",
+      "description": "Self Page"
+    },
+    {
+      "name": "EnglishNote",
+      "url": "https://github.com/hhhhp52/english-note",
+      "type": "self",
+      "description": "Record the english learning note"
+    },
+    {
+      "name": "ClinicPromotion",
+      "url": "https://www.health2sync.com/tw/diabetes-clinics",
+      "type": "work",
+      "description": "Website for promoting clinic's famous rate"
+    },
+    {
+      "name": "Health2Sync",
+      "url": "https://www.health2sync.com/tw",
+      "type": "work",
+      "description": "Company home page"
+    }
+  ]
+}

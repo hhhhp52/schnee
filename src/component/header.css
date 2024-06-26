@@ -5,7 +5,7 @@
 .profile-photo-object {
     width: 150px;
     height: 150px;
-    background: url('./images/schnee.jpeg') no-repeat;
+    background: url('../home/images/schnee.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50%;

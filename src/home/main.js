@@ -1,12 +1,14 @@
 import React from 'react'
 import './home.css'
 import './main.css'
-import IconButton from '@mui/material/IconButton';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import {Button, IconButton, Card, CardContent, CardHeader, Avatar, CardActions} from '@mui/material';
+import Typography from '@mui/material/Typography';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import {red} from "@mui/material/colors";
 
+
+const home_data = require('../file/home.json')
 
 export class Main extends React.Component {
     render() {
@@ -25,7 +27,7 @@ class Introduction extends React.Component {
     render() {
         return (
             <div>
-                <h1>Introduction</h1>
+                <h1>{home_data.title.introduction}</h1>
                 <div className="section"></div>
             </div>
         )
@@ -36,7 +38,7 @@ class Skills extends React.Component {
     render() {
         return (
             <div>
-                <h1>Skills</h1>
+                <h1>{home_data.title.skill}</h1>
                 <div className="section">
                     <div className="skill-panel">
                         <div className="skill-object">
@@ -92,7 +94,7 @@ class Experience extends React.Component {
     render() {
         return (
             <div>
-                <h1>Experience</h1>
+                <h1>{home_data.title.experience}</h1>
                 <div className="section">
                     <div className="work-panel">
                         <div className="work-object">
@@ -184,13 +186,28 @@ class Experience extends React.Component {
 
 function ProjectCard(props) {
     return (
-        <div className="project-card">
-            <Card variant="outlined">
-                <CardContent>
-                    {props.value}
-                </CardContent>
-            </Card>
-        </div>
+        <Card className="project-card">
+            <CardHeader
+                avatar={
+                    <Avatar sx={{ bgcolor: red[500] }} aria-label="project">
+                        {props.name[0]}
+                    </Avatar>
+                }
+                title={props.name}
+                subheader={props.type}
+                className="project-card-header"
+            />
+            <CardContent className="project-card-content">
+                <Typography variant="body2" color="text.secondary">
+                    {props.description}
+                </Typography>
+            </CardContent>
+            <CardActions disableSpacing className="project-card-footer">
+                <Button href={props.url}>
+                    Link
+                </Button>
+            </CardActions>
+        </Card>
     );
 }
 
@@ -199,54 +216,38 @@ class Project extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [
-                {
-                    project_name: "Test1",
-                    url:"./game"
-                },
-                {
-                    project_name: "Test2",
-                },
-                {
-                    project_name: "Test3",
-                },
-                {
-                    project_name: "Test4",
-                },
-                {
-                    project_name: "Test5",
-                },
-                {
-                    project_name: "Test6",
-                },
-                {
-                    project_name: "Test7",
-                }
-            ],
-            left: 6,
+            data: home_data.project,
+            max_item: home_data.project.length - 1,
+            left: home_data.project.length >= 1 ? home_data.project.length - 1 : 0,
             current: 0,
-            right: 1,
+            right: home_data.project.length >= 1 ? 1 : 0,
         };
     }
 
     renderCard(i) {
-        return <ProjectCard value={this.state.data[i].project_name}/>;
+        return <ProjectCard
+            name={this.state.data[i].name}
+            url={this.state.data[i].url}
+            type={this.state.data[i].type}
+            description={this.state.data[i].description}
+        />;
     }
 
     handleClick(i: number) {
         const left: number = this.state.left;
         const right: number = this.state.right;
+        const max_item: number = this.state.max_item;
         if (i === left) {
             this.setState({
-                left: left - 1 >= 0 ? left - 1 : 6,
+                left: left - 1 >= 0 ? left - 1 : max_item,
                 current: i,
-                right: right - 1 >= 0 ? right - 1 : 6,
+                right: right - 1 >= 0 ? right - 1 : max_item,
             });
         } else if (i === right) {
             this.setState({
-                left: left + 1 <= 6 ? left + 1 : 0,
+                left: left + 1 <= max_item ? left + 1 : 0,
                 current: i,
-                right: right + 1 <= 6 ? right + 1 : 0,
+                right: right + 1 <= max_item ? right + 1 : 0,
             });
         } else {
             console.log("Something Wrong")
@@ -259,7 +260,7 @@ class Project extends React.Component {
         const current = this.state.current;
         return (
             <div>
-                <h1>Project</h1>
+                <h1>{home_data.title.project}</h1>
                 <div className="section">
                     <div className="project-panel">
                         <div className="project-way">
