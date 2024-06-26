@@ -34,150 +34,108 @@ class Introduction extends React.Component {
     }
 }
 
+
+function SkillObject(props) {
+    const contentList = [];
+    for (let i = 0; i < props.contents.length; i++) {
+        contentList.push(<li>{props.contents[i]}</li>)
+    }
+    return (
+        <div className="skill-object">
+            <div className="skill-info"><strong>{props.info}</strong></div>
+            <div className="skill-content">
+                <ul>
+                    {contentList}
+                </ul>
+            </div>
+        </div>
+    );
+}
+
 class Skills extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: home_data.skill,
+            max_item: home_data.skill.length - 1,
+        };
+    }
+
+    renderSkill() {
+        const objects = [];
+        for (let i = 0; i <= this.state.max_item; i++) {
+            objects.push(<SkillObject
+                info={this.state.data[i].info}
+                contents={this.state.data[i].contents}
+            />);
+        }
+        return <div className="skill-panel">{objects}</div>
+    }
+
     render() {
         return (
             <div>
                 <h1>{home_data.title.skill}</h1>
                 <div className="section">
-                    <div className="skill-panel">
-                        <div className="skill-object">
-                            <div className="skill-info"><strong>Programming</strong></div>
-                            <div className="skill-content">
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Golang</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="skill-object">
-                            <div className="skill-info"><strong>Database</strong></div>
-                            <div className="skill-content">
-                                <ul>
-                                    <li>PostgreSQL</li>
-                                    <li>Redis</li>
-                                    <li>MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="skill-object">
-                            <div className="skill-info"><strong>Other</strong></div>
-                            <div className="skill-content">
-                                <ul>
-                                    <li>Kafka</li>
-                                    <li>Debezium</li>
-                                    <li>AWS</li>
-                                    <li>GRPC</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="skill-object">
-                            <div className="skill-info"><strong>Personality</strong></div>
-                            <div className="skill-content">
-                                <ul>
-                                    <li>Collaboration</li>
-                                    <li>Mediatory</li>
-                                    <li>Empathy</li>
-                                    <li>Flexibility</li>
-                                    <li>Creativity</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {this.renderSkill()}
                 </div>
             </div>
         )
     }
 }
 
+
+function ExperienceObject(props) {
+    const historyList = [];
+    for (let i = 0; i < props.history.length; i++) {
+        historyList.push(<li>{props.history[i]}</li>)
+    }
+    return (
+        <div className="work-object">
+            <div className="work-info">
+                <p><strong>{props.title}</strong></p>
+                <p>{props.company}</p>
+                <p><em>{props.timeline}</em></p>
+            </div>
+            <div className="work-content">
+                <ul>
+                    {historyList}
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+
 class Experience extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: home_data.experience,
+            max_item: home_data.experience.length - 1,
+        };
+    }
+
+    renderExperience() {
+        const objects = [];
+        for (let i = 0; i <= this.state.max_item; i++) {
+            objects.push(<ExperienceObject
+                company={this.state.data[i].company}
+                title={this.state.data[i].title}
+                timeline={this.state.data[i].timeline}
+                history={this.state.data[i].history}
+            />);
+        }
+        return <div className="work-panel">{objects}</div>
+    }
+
     render() {
         return (
             <div>
                 <h1>{home_data.title.experience}</h1>
                 <div className="section">
-                    <div className="work-panel">
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Senior Backend Engineer</strong></p>
-                                <p>H2 Inc.</p>
-                                <p><em>Feb. 2023 – Mar. 2024</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>Spearheaded the refactoring of long-time APIs, resulting in a 20% reduction
-                                        in
-                                        request time.
-                                    </li>
-                                    <li>Revamped the data transfer tool to enhance product stability and ensure
-                                        accurate
-                                        information.
-                                    </li>
-                                    <li>Contributed to early product design, providing feasibility planning and
-                                        suggestions.
-                                    </li>
-                                    <li>Offering ongoing support to team members, optimizing development efficiency.
-                                    </li>
-                                    <li>Led product adjustments, development, and demand confirmation for back-end
-                                        services.
-                                    </li>
-                                    <li>Supported the timely market release of Egyptian and Korean products.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Backend Engineer</strong></p>
-                                <p>H2 Inc.</p>
-                                <p><em>Jan. 2020 – Feb. 2023</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>Implemented projects such as ClinicPromotion, Telemedicine, and
-                                        Self-Titration.
-                                    </li>
-                                    <li>Designed and maintained the architecture for Health2sync, HealthPass, and
-                                        SyncPoint.
-                                    </li>
-                                    <li>Managed the development of Health2sync, boasting one million users and fifty
-                                        thousand daily active users.
-                                    </li>
-                                    <li>Assisted in structuring projects and provided technical support to new team
-                                        members.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>Junior Golang Web Engineer</strong></p>
-                                <p>AuroraTech Inc.</p>
-                                <p><em>Jul. 2019 – Jan. 2020</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>Developed the payment module, integrating third-party payment gateways for
-                                        convenience store codes, bank virtual accounts, and credit cards.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="work-object">
-                            <div className="work-info">
-                                <p><strong>IT Specialist</strong></p>
-                                <p>Cathay United Bank 國泰世華商業銀行</p>
-                                <p><em>Aug. 2017 – Mar. 2019</em></p>
-                            </div>
-                            <div className="work-content">
-                                <ul>
-                                    <li>Developed and maintained the financial system for debit and credit.</li>
-                                    <li>Possessed domain knowledge in credit and debit card systems.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {this.renderExperience()}
                 </div>
             </div>
         )
@@ -189,7 +147,7 @@ function ProjectCard(props) {
         <Card className="project-card">
             <CardHeader
                 avatar={
-                    <Avatar sx={{ bgcolor: red[500] }} aria-label="project">
+                    <Avatar sx={{bgcolor: red[500]}} aria-label="project">
                         {props.name[0]}
                     </Avatar>
                 }

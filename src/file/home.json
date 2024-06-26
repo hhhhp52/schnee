@@ -5,6 +5,85 @@
     "project": "Project",
     "introduction": "Introduction"
   },
+  "skill": [
+    {
+      "info": "Programming",
+      "contents": [
+        "Python",
+        "Golang"
+      ]
+    },
+    {
+      "info": "Database",
+      "contents": [
+        "PostgreSQL",
+        "Redis",
+        "MySQL"
+      ]
+    },
+    {
+      "info": "Other",
+      "contents": [
+        "Kafka",
+        "Debezium",
+        "AWS",
+        "GRPC"
+      ]
+    },
+    {
+      "info": "Personality",
+      "contents": [
+        "Collaboration",
+        "Mediatory",
+        "Empathy",
+        "Flexibility",
+        "Creativity"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "H2 Inc.",
+      "title": "Senior Backend Engineer",
+      "timeline": "Feb. 2023 – Mar. 2024",
+      "history": [
+        "Spearheaded the refactoring of long-time APIs, resulting in a 20% reduction in request time.",
+        "Revamped the data transfer tool to enhance product stability and ensure accurate information.",
+        "Contributed to early product design, providing feasibility planning and suggestions.",
+        "Offering ongoing support to team members, optimizing development efficiency.",
+        "Led product adjustments, development, and demand confirmation for back-end services.",
+        "Supported the timely market release of Egyptian and Korean products."
+      ]
+    },
+    {
+      "company": "H2 Inc.",
+      "title": "Backend Engineer",
+      "timeline": "Jan. 2020 – Feb. 2023",
+      "history": [
+        "Implemented projects such as ClinicPromotion, Telemedicine, and Self-Titration.",
+        "Designed and maintained the architecture for Health2sync, HealthPass, and SyncPoint.",
+        "Managed the development of Health2sync, boasting one million users and fifty thousand daily active users.",
+        "Assisted in structuring projects and provided technical support to new team members."
+      ]
+    },
+    {
+      "company": "Junior Golang Web Engineer",
+      "title": "AuroraTech Inc.",
+      "timeline": "Jul. 2019 – Jan. 2020",
+      "history": [
+        "Developed the payment module, integrating third-party payment gateways for convenience store codes, bank virtual accounts, and credit cards."
+      ]
+    },
+    {
+      "company": "Cathay United Bank 國泰世華商業銀行",
+      "title": "IT Specialist",
+      "timeline": "Aug. 2017 – Mar. 2019",
+      "history": [
+        "Developed and maintained the financial system for debit and credit.",
+        "Possessed domain knowledge in credit and debit card systems."
+      ]
+    }
+  ],
   "project": [
     {
       "name": "GithubPage",
