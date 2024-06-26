@@ -223,18 +223,24 @@ h1 {
         font-size: 10px;
         min-width: 200px;
     }
+
+    .project-screen {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .project-card {
-        width: 170px;
+        width: 150px;
     }
     .project-card .project-card-header {
-        width: 150px;
+        width: 130px;
     }
 
     .project-card .project-card-content {
-        width: 150px;
+        width: 130px;
     }
 
     .project-card .project-card-footer {
-        width: 150px;
+        width: 130px;
     }
 }

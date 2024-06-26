@@ -31,16 +31,10 @@ class Introduction extends React.Component {
                 <div className="section">
                     <div className="introduction-panel">
                         <div className="introduction-object">
-                            Nearly 6 years of experience as an engineer.
+                            <strong>5+</strong> years of backend engineer. Proficient in <strong>Python and the Flask framework</strong> to quickly set up servers.
                         </div>
                         <div className="introduction-object">
-                            Proficient in backend engineering, using Python and the Flask framework to quickly set up servers.
-                        </div>
-                        <div className="introduction-object">
-                            Skilled in team collaboration, summarizing key points, and multi-party negotiations
-                        </div>
-                        <div className="introduction-object">
-                            Habitually empathetic, analyzing situations and needs from multiple perspectives
+                            Strong ability to collaborate with multiple teams, at least <strong>four teams</strong>, including Product, Design, App and Business, and often <strong>as the key man</strong> in the project.
                         </div>
                     </div>
                 </div>
@@ -101,10 +95,9 @@ class Skills extends React.Component {
 
 
 function ExperienceObject(props) {
-    const historyList = [];
-    for (let i = 0; i < props.history.length; i++) {
-        historyList.push(<li>{props.history[i]}</li>)
-    }
+    const historyList = props.history.map((item, index) => (
+        <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>
+    ));
     return (
         <div className="work-object">
             <div className="work-info">
