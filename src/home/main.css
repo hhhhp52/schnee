@@ -4,6 +4,20 @@
     padding-bottom: 5px;
 }
 
+.introduction-panel {
+    display: grid;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template: 20px / auto;
+}
+
+.introduction-object {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
 .skill-panel {
     display: grid;
     grid-gap: 10px 10px;
@@ -63,7 +77,7 @@
     font-size: 16px;
     width: 200px;
     min-width: 100px;
-    border-right: aquamarine dashed 1px;
+    border-right: lightgray dashed 1px;
 }
 
 .work-content {
@@ -72,11 +86,82 @@
     font-size: 14px;
 }
 
-h2 {
+h1 {
     text-align: center;
 }
 
+.project-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.project-way{
+    flex: none;
+    width: 50px;
+}
+
+.project-screen {
+    flex: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.project-shower {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.project-card {
+    width: 200px;
+    height: 200px;
+    border: aquamarine solid 10px;
+}
+
+.project-card .project-card-header {
+    width: 180px;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project-card .project-card-content {
+    width: 180px;
+    height: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project-card .project-card-footer {
+    width: 180px;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
 @media (min-width: 481px) and (max-width: 840px) {
+
+    .introduction-object {
+        font-size: 12px;
+    }
 
     .skill-panel {
         grid-template: auto / auto auto;
@@ -100,6 +185,10 @@ h2 {
 
 
 @media (max-width: 480px) {
+
+    .introduction-object {
+        font-size: 10px;
+    }
 
     .skill-panel {
         grid-template: auto / auto;
@@ -126,12 +215,26 @@ h2 {
         min-width: 200px;
         font-size: 12px;
         border-right: 0;
-        border-bottom: aquamarine dashed 1px;
+        border-bottom: lightgray dashed 1px;
     }
 
     .work-content {
         flex: none;
         font-size: 10px;
         min-width: 200px;
+    }
+    .project-card {
+        width: 170px;
+    }
+    .project-card .project-card-header {
+        width: 150px;
+    }
+
+    .project-card .project-card-content {
+        width: 150px;
+    }
+
+    .project-card .project-card-footer {
+        width: 150px;
     }
 }

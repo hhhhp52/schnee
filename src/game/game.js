@@ -1,5 +1,7 @@
 import React from 'react'
 import './game.css'
+import {Header} from "../component/header";
+import {Footer} from "../component/footer";
 
 function calculateWinner(squares) {
     const lines = [
@@ -119,15 +121,25 @@ class Game extends React.Component {
         }
 
         return (
-            <div className="game">
-                <div className="game-board">
-                    <Board squares={current.squares} onClick={(i) => this.handleClick(i)}/>
+            <div>
+                <Header/>
+                <div className="game">
+                    <div className="game-board">
+                        <Board squares={current.squares} onClick={(i) => this.handleClick(i)}/>
+                    </div>
+                    <div className="game-info">
+                        <div>{status}</div>
+                        <ol>{moves}</ol>
+                    </div>
                 </div>
-                <div className="game-info">
-                    <div>{status}</div>
-                    <ol>{moves}</ol>
-                </div>
+                <Footer/>
             </div>
         );
     }
+}
+
+export default function GamePage() {
+    return(
+        <Game/>
+    )
 }

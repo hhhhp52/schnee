@@ -41,8 +41,9 @@ ol, ul {
 }
 
 .game {
-    display: flex;
-    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 .game-info {
