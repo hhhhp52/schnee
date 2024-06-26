@@ -28,7 +28,22 @@ class Introduction extends React.Component {
         return (
             <div>
                 <h1>{home_data.title.introduction}</h1>
-                <div className="section"></div>
+                <div className="section">
+                    <div className="introduction-panel">
+                        <div className="introduction-object">
+                            Nearly 6 years of experience as an engineer.
+                        </div>
+                        <div className="introduction-object">
+                            Proficient in backend engineering, using Python and the Flask framework to quickly set up servers.
+                        </div>
+                        <div className="introduction-object">
+                            Skilled in team collaboration, summarizing key points, and multi-party negotiations
+                        </div>
+                        <div className="introduction-object">
+                            Habitually empathetic, analyzing situations and needs from multiple perspectives
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

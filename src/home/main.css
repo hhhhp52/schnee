@@ -4,6 +4,20 @@
     padding-bottom: 5px;
 }
 
+.introduction-panel {
+    display: grid;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template: 20px / auto;
+}
+
+.introduction-object {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
 .skill-panel {
     display: grid;
     grid-gap: 10px 10px;
@@ -145,6 +159,10 @@ h1 {
 
 @media (min-width: 481px) and (max-width: 840px) {
 
+    .introduction-object {
+        font-size: 12px;
+    }
+
     .skill-panel {
         grid-template: auto / auto auto;
     }
@@ -167,6 +185,10 @@ h1 {
 
 
 @media (max-width: 480px) {
+
+    .introduction-object {
+        font-size: 10px;
+    }
 
     .skill-panel {
         grid-template: auto / auto;
