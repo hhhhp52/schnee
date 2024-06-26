@@ -49,12 +49,11 @@
       "title": "Senior Backend Engineer",
       "timeline": "Feb. 2023 – Mar. 2024",
       "history": [
-        "Spearheaded the refactoring of long-time APIs, resulting in a 20% reduction in request time.",
-        "Revamped the data transfer tool to enhance product stability and ensure accurate information.",
-        "Contributed to early product design, providing feasibility planning and suggestions.",
-        "Offering ongoing support to team members, optimizing development efficiency.",
-        "Led product adjustments, development, and demand confirmation for back-end services.",
-        "Supported the timely market release of Egyptian and Korean products."
+        "Spearheaded the refactoring of long-time APIs, resulting in a <strong>20% reduction</strong> in request time.",
+        "<strong>Reduced</strong> the time spent on subsequent adjustments by <strong>at least half</strong>, when I participated in early product design, providing feasibility planning and suggestions.",
+        "Offering ongoing support to web team members, optimizing <strong>at least 30% development efficiency.</strong>",
+        "<strong>Reduced</strong> the junior developers' time range by <strong>at least 1 to 2 weeks</strong>, when I led long-term (at least one month) product adjustments, development, and demand confirmation for back-end services.",
+        "Supported the timely market release of Egyptian and Korean products, and <strong>completed</strong> the backend services <strong>1 month in advance</strong>, providing the product team with more time for validation."
       ]
     },
     {
@@ -64,7 +63,7 @@
       "history": [
         "Implemented projects such as ClinicPromotion, Telemedicine, and Self-Titration.",
         "Designed and maintained the architecture for Health2sync, HealthPass, and SyncPoint.",
-        "Managed the development of Health2sync, boasting one million users and fifty thousand daily active users.",
+        "Managed the development of Health2sync, boasting <strong>one million</strong> users and <strong>fifty thousand daily</strong> active users.",
         "Assisted in structuring projects and provided technical support to new team members."
       ]
     },
@@ -100,7 +99,7 @@
       "description": "Record the english learning note"
     },
     {
-      "name": "ClinicPromotion",
+      "name": "Clinic\nPromotion",
       "url": "https://www.health2sync.com/tw/diabetes-clinics",
       "type": "work",
       "description": "Website for promoting clinic's famous rate"
