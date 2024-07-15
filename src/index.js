@@ -8,6 +8,7 @@ import {
 
 import HomePage from './home/home'
 import GamePage from "./game/game";
+import ProjectPage from "./project/project";
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {
         path: "/game",
         element: <GamePage/>,
+    },
+    {
+        path: "/schnee/project",
+        element: <ProjectPage/>,
     },
 ]);
 
