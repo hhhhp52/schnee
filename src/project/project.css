@@ -1,0 +1,6 @@
+/*
+React Body Has margin: 8px as default
+*/
+body {
+    margin: 0;
+}
