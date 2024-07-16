@@ -6,23 +6,30 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import './main.css'
 
-
-const home_data = require('../file/home.json')
+const project_data = require('../file/project.json')
 
 
 function ProjectDetail(props) {
     return (
         <div>
-            {props.name}
+            <div className="info">
+                <h2>
+                    Category: {props.type}
+                </h2>
+            </div>
+            <div className="description">
+                <div>
+                    {props.description}
+                </div>
+            </div>
         </div>
     );
 }
 
-
 function ProjectCard(props) {
 
     return (
-        <Card className="project-card">
+        <Card className="card">
             <CardHeader
                 avatar={
                     <Avatar sx={{bgcolor: red[500]}} aria-label="project">
@@ -31,14 +38,14 @@ function ProjectCard(props) {
                 }
                 title={props.name}
                 subheader={props.type}
-                className="project-card-header"
+                className="card-header"
             />
-            <CardContent className="project-card-content">
+            <CardContent className="card-content">
                 <Typography variant="body2" color="text.secondary">
                     {props.description}
                 </Typography>
             </CardContent>
-            <CardActions disableSpacing className="project-card-footer">
+            <CardActions disableSpacing className="card-footer">
                 <Button href={props.url}>
                     Link
                 </Button>
@@ -55,17 +62,17 @@ export class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: home_data.project,
-            max_item: home_data.project.length - 1,
-            left: home_data.project.length >= 1 ? home_data.project.length - 1 : 0,
+            data: project_data.project,
+            max_item: project_data.project.length - 1,
+            left: project_data.project.length >= 1 ? project_data.project.length - 1 : 0,
             current: 0,
-            right: home_data.project.length >= 1 ? 1 : 0,
+            right: project_data.project.length >= 1 ? 1 : 0,
             show_detail: false,
             detail_number: 0,
         };
     }
 
-    handleDetailClick(i){
+    handleDetailClick(i) {
         this.setState({
             show_detail: true,
             detail_number: i,
@@ -85,6 +92,8 @@ export class Main extends React.Component {
     renderDetail(i) {
         return <ProjectDetail
             name={this.state.data[i].name}
+            type={this.state.data[i].type}
+            description={this.state.data[i].description}
         />;
     }
 
@@ -117,24 +126,24 @@ export class Main extends React.Component {
         const detail_number = this.state.detail_number;
         return (
             <div className="main">
-                <h1>{home_data.title.project}</h1>
+                <h1>{project_data.title.project}</h1>
                 <div className="section">
-                    <div className="project-panel">
-                        <div className="project-way">
+                    <div className="panel">
+                        <div className="way">
                             <IconButton
                                 onClick={() => this.handleClick(left)}
                                 size="large">
                                 <ChevronLeftIcon fontSize="inherit"/>
                             </IconButton>
                         </div>
-                        <div className="project-screen">
+                        <div className="screen">
                             <div className="project-shower">
                                 {this.renderCard(left)}
                                 {this.renderCard(current)}
                                 {this.renderCard(right)}
                             </div>
                         </div>
-                        <div className="project-way">
+                        <div className="way">
                             <div>
                                 <IconButton
                                     onClick={() => this.handleClick(right)}
@@ -145,8 +154,11 @@ export class Main extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className={show_detail === true ? "project-detail" : "project-detail-hide"}>
-                    {this.renderDetail(detail_number)}
+                <div className={show_detail === true ? "detail-visible" : "detail-hidden"}>
+                    <h1>{this.state.data[detail_number].name}</h1>
+                    <div className="detail">
+                        {this.renderDetail(detail_number)}
+                    </div>
                 </div>
             </div>
         )
