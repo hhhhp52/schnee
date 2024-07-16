@@ -1,14 +1,23 @@
+.main {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .section {
     align-items: center;
     font-size: 20px;
     padding-bottom: 5px;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
 }
 
 h1 {
     text-align: center;
 }
 
-.project-panel {
+.panel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,12 +25,12 @@ h1 {
     padding-right: 10%;
 }
 
-.project-way{
+.way{
     flex: none;
     width: 50px;
 }
 
-.project-screen {
+.screen {
     flex: auto;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -32,7 +41,7 @@ h1 {
     justify-content: center;
 }
 
-.project-shower {
+.shower {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 10px;
@@ -40,13 +49,13 @@ h1 {
     padding-left: 10px;
 }
 
-.project-card {
+.card {
     width: 200px;
     height: 200px;
     border: aquamarine solid 3px;
 }
 
-.project-card .project-card-header {
+.card .card-header {
     width: 180px;
     height: 20px;
     padding-top: 20px;
@@ -55,7 +64,7 @@ h1 {
     padding-right: 10px;
 }
 
-.project-card .project-card-content {
+.card .card-content {
     width: 180px;
     height: 100px;
     padding-top: 0;
@@ -64,7 +73,7 @@ h1 {
     padding-right: 10px;
 }
 
-.project-card .project-card-footer {
+.card .card-footer {
     width: 180px;
     height: 20px;
     padding-top: 0;
@@ -73,13 +82,36 @@ h1 {
     padding-right: 10px;
 }
 
-.project-detail {
-    display: grid;
+.detail-visible {
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-detail-hide {
+.detail-hidden {
     display: none;
 }
+
+.detail {
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top-color: black;
+    border-top-width: 1px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.description {
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
@@ -97,29 +129,29 @@ h1 {
         font-size: 16px;
     }
 
-    .project-screen {
+    .screen {
         padding-right: 0;
         padding-left: 0;
     }
 
-    .project-shower {
+    .shower {
         padding-right: 0;
         padding-left: 0;
     }
 
-    .project-card {
+    .card {
         width: 170px;
     }
 
-    .project-card .project-card-header {
+    .card .card-header {
         width: 150px;
     }
 
-    .project-card .project-card-content {
+    .card .card-content {
         width: 150px;
     }
 
-    .project-card .project-card-footer {
+    .card .card-footer {
         width: 150px;
     }
 }
