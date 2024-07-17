@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         path: "/schnee/project",
         element: <ProjectPage/>,
     },
-]);
+], { basename: '/schnee' });
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
