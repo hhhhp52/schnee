@@ -1,6 +1,6 @@
 {
-  "short_name": "Schnee's Blog",
-  "name": "Schnee's Blog",
+  "short_name": "Schnee Ruan",
+  "name": "Schnee Ruan — Software Development Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#171714",
-  "background_color": "#f2f0e9"
+  "theme_color": "#302923",
+  "background_color": "#f6f0e7"
 }
