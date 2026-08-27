@@ -38,5 +38,36 @@ footer{background:#302923}
 .project-card:nth-child(n){background:transparent;color:var(--ink)}
 .project-card:nth-child(4n+2),.project-card:nth-child(4n+3){background:var(--ink);color:white}
 .project-card:hover{background:#c9a98c;color:var(--ink)}
-.project-card .private-label{position:absolute;right:25px;top:28px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;opacity:.55}
+.project-card .project-tag{position:static;justify-self:start;width:auto;padding:6px 10px;border:1px solid currentColor;border-radius:99px;font-family:var(--sans);font-size:9px;font-style:normal;line-height:1;letter-spacing:.1em;text-transform:uppercase;opacity:.62}
 @media(max-width:640px){.project-card:nth-child(n){background:transparent;color:var(--ink)}.project-card:nth-child(even){background:var(--ink);color:white}.project-card:hover{background:#c9a98c;color:var(--ink)}}
+.project-card{aspect-ratio:auto;min-height:220px;padding:24px;display:grid;grid-template-rows:auto auto 1fr;row-gap:18px}
+.project-card h3{margin:7px 0 10px}
+.project-card div>span{display:block;max-width:34ch;line-height:1.55}
+@media(max-width:640px){.project-card{aspect-ratio:auto;min-height:185px;padding:22px}}
+
+/* Floating section index */
+.site-shell{overflow:clip}
+.topbar{
+    position:sticky;
+    top:14px;
+    width:calc(100% - 48px);
+    max-width:1180px;
+    height:64px;
+    margin:14px auto 0;
+    padding:0 18px;
+    border:1px solid rgba(48,41,35,.12);
+    border-radius:18px;
+    background:rgba(246,240,231,.84);
+    box-shadow:0 10px 35px rgba(67,51,40,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+}
+#about,#skills,#experience,#projects{scroll-margin-top:96px}
+.topbar nav{gap:4px;padding:4px;background:rgba(168,117,82,.08);border-radius:12px}
+.topbar nav a{display:flex;align-items:center;gap:7px;padding:9px 12px;border-radius:9px;color:var(--muted);transition:background .2s,color .2s}
+.topbar nav a:after{display:none}
+.topbar nav a span{font-family:var(--serif);font-size:10px;font-style:italic;opacity:.55}
+.topbar nav a:hover{background:rgba(255,255,255,.55);color:var(--ink)}
+.topbar nav a.active{background:#fffaf3;color:var(--ink);box-shadow:0 3px 12px rgba(67,51,40,.08)}
+@media(max-width:900px){.topbar{grid-template-columns:auto 1fr auto;gap:14px}.topbar nav{display:flex;justify-self:center}.topbar nav a{padding:8px 9px}}
+@media(max-width:640px){.topbar{top:8px;width:calc(100% - 16px);height:58px;margin-top:8px;padding:0 10px;grid-template-columns:auto 1fr;gap:8px;border-radius:15px}.wordmark{font-size:0}.wordmark span{width:30px;height:30px;font-size:10px}.nav-contact{display:none}.topbar nav{justify-self:stretch;justify-content:space-between;min-width:0}.topbar nav a{gap:0;padding:8px 7px;font-size:10px}.topbar nav a span{display:none}}
