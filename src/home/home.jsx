@@ -27,11 +27,24 @@ function SectionHeading({ label, headline, accent }) {
 function Portfolio({ data }) {
     const { profile, navigation, socials, hero, about, skillsSection, skills, experienceSection, experience, projectsSection, projects, contact, footer } = data
     const emailUrl = `mailto:${profile.email}`
+    const [activeSection, setActiveSection] = useState(navigation[0].target)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+            if (visible) setActiveSection(visible.target.id)
+        }, { rootMargin: '-25% 0px -60%', threshold: [0, 0.2, 0.5] })
+        navigation.forEach(item => {
+            const section = document.getElementById(item.target)
+            if (section) observer.observe(section)
+        })
+        return () => observer.disconnect()
+    }, [navigation])
 
     return <div className="site-shell">
         <header className="topbar">
             <a className="wordmark" href="#top" aria-label="Back to top"><span>{profile.initials}</span> {profile.name}</a>
-            <nav aria-label="Primary navigation">{navigation.map(item => <a href={`#${item.target}`} key={item.target}>{item.label}</a>)}</nav>
+            <nav aria-label="Section index">{navigation.map((item, index) => <a className={activeSection === item.target ? 'active' : ''} href={`#${item.target}`} aria-current={activeSection === item.target ? 'location' : undefined} key={item.target}><span>{String(index + 1).padStart(2, '0')}</span>{item.label}</a>)}</nav>
             <a className="nav-contact" href={emailUrl}>Let's talk</a>
         </header>
         <main id="top">
@@ -65,7 +78,7 @@ function Portfolio({ data }) {
             </section>
             <section className="projects section-wrap" id="projects">
                 <SectionHeading {...projectsSection} />
-                <div className="project-grid">{projects.map((project, index) => <ExternalLink className="project-card" href={project.url} label={project.name} key={project.name}><span className="project-number">{String(index + 1).padStart(2, '0')}</span>{project.url ? <ArrowOutwardIcon /> : <span className="private-label">Private</span>}<div><p>{project.category}</p><h3>{project.name}</h3><span>{project.description}</span></div></ExternalLink>)}</div>
+                <div className="project-grid">{projects.map((project, index) => <ExternalLink className="project-card" href={project.url} label={project.name} key={project.name}><span className="project-number">{String(index + 1).padStart(2, '0')}</span>{project.url && <ArrowOutwardIcon />}<span className="project-tag">{project.category}</span><div><h3>{project.name}</h3><span>{project.description}</span></div></ExternalLink>)}</div>
             </section>
             <section className="contact section-wrap"><p className="eyebrow"><span /> {contact.eyebrow}</p><h2>{contact.headline}<br /><em>{contact.accent}</em></h2><a href={emailUrl}>{contact.linkLabel} <ArrowOutwardIcon /></a></section>
         </main>
