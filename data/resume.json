@@ -1,0 +1,140 @@
+{
+  "profile": {
+    "name": "Schnee Ruan",
+    "initials": "SR",
+    "role": "Software Development Engineer",
+    "location": "Taiwan",
+    "email": "hhhhp52@gmail.com",
+    "portraitAlt": "Portrait of Schnee Ruan",
+    "focus": "BACKEND · SYSTEMS · PRODUCT",
+    "statusLabel": "What I care about",
+    "statusText": "Systems that stay clear as they scale."
+  },
+  "navigation": [
+    { "label": "About", "target": "about" },
+    { "label": "Skills", "target": "skills" },
+    { "label": "Experience", "target": "experience" },
+    { "label": "Projects", "target": "projects" }
+  ],
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/hhhhp52", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/schneeheart/", "icon": "linkedin" },
+    { "label": "Email", "url": "mailto:hhhhp52@gmail.com", "icon": "email" }
+  ],
+  "hero": {
+    "headline": "I turn complex systems into dependable products.",
+    "accent": "From architecture to delivery.",
+    "summary": "Backend-focused software engineer working across IoT, payments, cloud infrastructure, and AI-assisted development. I trace production symptoms to structural causes and build solutions that teams can understand, operate, and evolve.",
+    "primaryAction": "View experience"
+  },
+  "about": {
+    "label": "01 / About",
+    "headline": "Technical depth,",
+    "accent": "product perspective.",
+    "paragraphs": [
+      "I am a backend-focused software engineer with experience across EV charging, digital health, fintech, and payment systems. At Nexagrids, I own core IoT and Payment services while contributing across a platform of backend and frontend repositories.",
+      "I work at the intersection of architecture, production reliability, and product delivery: resolving ambiguous requirements, reviewing system boundaries, and turning recurring operational problems into durable engineering improvements."
+    ],
+    "stats": [
+      { "value": "8+", "label": "Years building software" },
+      { "value": "10", "label": "Repositories reviewed across" },
+      { "value": "380+", "label": "Merge requests reviewed in 2026" }
+    ]
+  },
+  "skillsSection": {
+    "label": "02 / Capabilities",
+    "headline": "A practical toolkit for",
+    "accent": "reliable delivery."
+  },
+  "skills": [
+    { "name": "Backend & Architecture", "icon": "code", "items": ["Go", "Gin", "GORM", "Python", "RESTful APIs", "Microservices"] },
+    { "name": "Data & Messaging", "icon": "storage", "items": ["PostgreSQL", "BigQuery", "Redis", "Pub/Sub", "DB migrations"] },
+    { "name": "Cloud & Platform", "icon": "systems", "items": ["Google Cloud", "GKE", "Cloud Run", "Docker", "Kubernetes", "GitLab CI/CD"] },
+    { "name": "Domain Integrations", "icon": "systems", "items": ["OCPP", "TapPay", "SmilePay", "Auth0", "E-invoicing"] },
+    { "name": "AI & Product Tools", "icon": "code", "items": ["Claude Code", "OpenAI", "Gemini", "Agent SDK", "Electron", "Prompt engineering"] },
+    { "name": "Engineering Leadership", "icon": "people", "items": ["System design", "Code review", "Technical writing", "Jira", "Confluence", "Cross-team alignment"] }
+  ],
+  "experienceSection": {
+    "label": "03 / Experience",
+    "headline": "Systems delivered,",
+    "accent": "outcomes measured."
+  },
+  "experience": [
+    {
+      "company": "Nexagrids Inc.",
+      "title": "Software Development Engineer",
+      "period": "Oct 2024 — Present",
+      "highlights": [
+        "Own the IoT and Payment services for an EV-charging management SaaS platform, spanning charge-point operations, OCPP communication, tariffs, payments, and e-invoicing.",
+        "Designed an idempotent bi-monthly invoice-serial replenishment job with a tolerant execution window and GCP Monitoring alerts, replacing a fragile manual process.",
+        "Traced charging-fee discrepancies to a dual source of truth and asynchronous race conditions, then proposed a Postgres-authoritative settlement architecture with shared pure calculation logic and audit fields.",
+        "Rebuilt the Payment Architecture documentation into a 16-page system-design baseline covering principles, state machines, and service boundaries.",
+        "Reviewed and merged 380+ MRs across 10 repositories in 2026, established shared review standards, and consistently paired production fixes with regression tests and backward-compatible rollouts.",
+        "Led adoption of an AI-assisted development workflow and programmatically migrated a 380-page engineering knowledge base from Notion to Confluence."
+      ]
+    },
+    {
+      "company": "H2 Inc.",
+      "title": "Senior Backend Engineer",
+      "period": "Feb 2023 — Mar 2024",
+      "highlights": [
+        "Refactored long-running APIs and reduced request latency by 20%.",
+        "Joined product discovery early to assess feasibility and cut follow-up adjustment time by at least half.",
+        "Improved web-team delivery efficiency by at least 30% through ongoing backend support and clearer interfaces.",
+        "Led month-long backend initiatives and shortened junior engineers’ delivery timelines by one to two weeks.",
+        "Delivered backend services for Egypt and Korea one month early, creating more time for product validation."
+      ]
+    },
+    {
+      "company": "H2 Inc.",
+      "title": "Backend Engineer",
+      "period": "Jan 2020 — Feb 2023",
+      "highlights": [
+        "Built backend services for Clinic Promotion, Telemedicine, and Self-Titration products.",
+        "Designed and maintained service architecture across Health2Sync, HealthPass, and SyncPoint.",
+        "Supported a digital-health platform serving more than one million users and 50,000 daily active users.",
+        "Helped establish project structures and provided technical guidance to new team members."
+      ]
+    },
+    {
+      "company": "AuroraTech Inc.",
+      "title": "Junior Go Web Engineer",
+      "period": "Jul 2019 — Jan 2020",
+      "highlights": [
+        "Developed a payment module integrating convenience-store codes, bank virtual accounts, and credit-card gateways."
+      ]
+    },
+    {
+      "company": "Cathay United Bank",
+      "title": "IT Specialist",
+      "period": "Aug 2017 — Mar 2019",
+      "highlights": [
+        "Developed and maintained financial systems supporting debit and credit-card operations.",
+        "Built domain knowledge across card processing and banking workflows."
+      ]
+    }
+  ],
+  "projectsSection": {
+    "label": "04 / Selected Work",
+    "headline": "Products, platforms,",
+    "accent": "and experiments."
+  },
+  "projects": [
+    { "name": "Portfolio", "url": "https://github.com/hhhhp52/schnee", "category": "Personal project", "description": "A data-driven portfolio built with React and Vite, deployed on GitHub Pages." },
+    { "name": "Loom", "url": "https://github.com/hhhhp52/AiHub-Loom", "category": "Personal project", "description": "A multi-model AI desktop application unifying Claude, ChatGPT, and Gemini with agent workflows and local usage analytics." },
+    { "name": "LocalAiTranslator", "url": null, "category": "Private personal project", "description": "A Windows game-localization workbench with a Go translation and QA core, MTool and Unity adapters, local Ollama models, translation memory, audit history, and a .NET/WPF interface." },
+    { "name": "Taiwan Stock Research", "url": "https://github.com/hhhhp52/Tw-Stock", "category": "Personal data project", "description": "Reproducible Taiwan-market research using public TWSE and TPEx datasets for price history, corporate actions, and listed securities analysis." },
+    { "name": "Clinic Promotion", "url": "https://www.health2sync.com/tw/diabetes-clinics", "category": "Professional work", "description": "A clinic-discovery experience connecting people with diabetes-care providers." },
+    { "name": "Health2Sync", "url": "https://www.health2sync.com/tw", "category": "Professional work", "description": "A digital diabetes-management platform serving patients and care teams at scale." }
+  ],
+  "contact": {
+    "eyebrow": "Have a role, idea, or technical challenge?",
+    "headline": "Let’s turn complexity into",
+    "accent": "a system that works.",
+    "linkLabel": "hhhhp52@gmail.com"
+  },
+  "footer": {
+    "note": "Built as a data-driven portfolio.",
+    "backToTop": "Back to top"
+  }
+}
