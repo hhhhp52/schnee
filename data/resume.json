@@ -11,10 +11,10 @@
     "statusText": "Systems that stay clear as they scale."
   },
   "navigation": [
-    { "label": "About", "target": "about" },
-    { "label": "Skills", "target": "skills" },
-    { "label": "Experience", "target": "experience" },
-    { "label": "Projects", "target": "projects" }
+    { "label": "Profile", "target": "about" },
+    { "label": "Toolkit", "target": "skills" },
+    { "label": "Career", "target": "experience" },
+    { "label": "Work", "target": "projects" }
   ],
   "socials": [
     { "label": "GitHub", "url": "https://github.com/hhhhp52", "icon": "github" },
@@ -36,9 +36,9 @@
       "I work at the intersection of architecture, production reliability, and product delivery: resolving ambiguous requirements, reviewing system boundaries, and turning recurring operational problems into durable engineering improvements."
     ],
     "stats": [
-      { "value": "8+", "label": "Years building software" },
-      { "value": "10", "label": "Repositories reviewed across" },
-      { "value": "380+", "label": "Merge requests reviewed in 2026" }
+      { "value": "8+", "label": "Years building production software" },
+      { "value": "1M+", "label": "Users served by products delivered" },
+      { "value": "20%", "label": "API latency reduction achieved" }
     ]
   },
   "skillsSection": {
@@ -65,12 +65,12 @@
       "title": "Software Development Engineer",
       "period": "Oct 2024 — Present",
       "highlights": [
-        "Own the IoT and Payment services for an EV-charging management SaaS platform, spanning charge-point operations, OCPP communication, tariffs, payments, and e-invoicing.",
-        "Designed an idempotent bi-monthly invoice-serial replenishment job with a tolerant execution window and GCP Monitoring alerts, replacing a fragile manual process.",
-        "Traced charging-fee discrepancies to a dual source of truth and asynchronous race conditions, then proposed a Postgres-authoritative settlement architecture with shared pure calculation logic and audit fields.",
-        "Rebuilt the Payment Architecture documentation into a 16-page system-design baseline covering principles, state machines, and service boundaries.",
-        "Reviewed and merged 380+ MRs across 10 repositories in 2026, established shared review standards, and consistently paired production fixes with regression tests and backward-compatible rollouts.",
-        "Led adoption of an AI-assisted development workflow and programmatically migrated a 380-page engineering knowledge base from Notion to Confluence."
+        "Accelerated delivery of cross-service features by defining backend boundaries, API contracts, and rollout sequences early, allowing product, frontend, backend, and QA teams to move with fewer handoff blockers.",
+        "Eliminated recurring manual invoice operations by introducing resilient automation and proactive monitoring, reducing operational effort while protecting payment continuity.",
+        "Improved production stability by turning recurring incidents into system-level fixes, regression coverage, and backward-compatible releases that allowed dependent teams to deploy independently.",
+        "Raised engineering quality across 10 backend and frontend repositories by serving as a primary reviewer, establishing shared coding standards, and coaching engineers through complex changes.",
+        "Led platform-wide technical upgrades across six services without disrupting CI, using staged rollout planning to keep development and releases moving.",
+        "Standardized an AI-assisted development workflow from requirements through documentation, reducing coordination friction and making high-quality delivery more repeatable across the team."
       ]
     },
     {
@@ -101,7 +101,7 @@
       "title": "Junior Go Web Engineer",
       "period": "Jul 2019 — Jan 2020",
       "highlights": [
-        "Developed a payment module integrating convenience-store codes, bank virtual accounts, and credit-card gateways."
+        "Developed payment capabilities that connected multiple consumer payment methods through a unified backend workflow."
       ]
     },
     {
@@ -109,8 +109,8 @@
       "title": "IT Specialist",
       "period": "Aug 2017 — Mar 2019",
       "highlights": [
-        "Developed and maintained financial systems supporting debit and credit-card operations.",
-        "Built domain knowledge across card processing and banking workflows."
+        "Developed and maintained business-critical banking systems supporting debit and credit-card operations.",
+        "Built an early foundation in reliable software delivery within a highly regulated financial environment."
       ]
     }
   ],
@@ -120,18 +120,18 @@
     "accent": "and experiments."
   },
   "projects": [
-    { "name": "Portfolio", "url": "https://github.com/hhhhp52/schnee", "category": "Personal project", "description": "A data-driven portfolio built with React and Vite, deployed on GitHub Pages." },
-    { "name": "Loom", "url": "https://github.com/hhhhp52/AiHub-Loom", "category": "Personal project", "description": "A multi-model AI desktop application unifying Claude, ChatGPT, and Gemini with agent workflows and local usage analytics." },
-    { "name": "LocalAiTranslator", "url": null, "category": "Private personal project", "description": "A Windows game-localization workbench with a Go translation and QA core, MTool and Unity adapters, local Ollama models, translation memory, audit history, and a .NET/WPF interface." },
-    { "name": "Taiwan Stock Research", "url": "https://github.com/hhhhp52/Tw-Stock", "category": "Personal data project", "description": "Reproducible Taiwan-market research using public TWSE and TPEx datasets for price history, corporate actions, and listed securities analysis." },
-    { "name": "Clinic Promotion", "url": "https://www.health2sync.com/tw/diabetes-clinics", "category": "Professional work", "description": "A clinic-discovery experience connecting people with diabetes-care providers." },
-    { "name": "Health2Sync", "url": "https://www.health2sync.com/tw", "category": "Professional work", "description": "A digital diabetes-management platform serving patients and care teams at scale." }
+    { "name": "Portfolio", "url": "https://github.com/hhhhp52/schnee", "category": "Personal Project", "description": "A data-driven portfolio built with React and Vite, deployed on GitHub Pages." },
+    { "name": "Loom", "url": "https://github.com/hhhhp52/AiHub-Loom", "category": "Personal Project", "description": "A multi-model AI desktop application unifying Claude, ChatGPT, and Gemini with agent workflows and local usage analytics." },
+    { "name": "LocalAiTranslator", "url": null, "category": "Personal Project", "description": "A Windows game-localization workbench with a Go translation and QA core, MTool and Unity adapters, local Ollama models, translation memory, audit history, and a .NET/WPF interface." },
+    { "name": "Taiwan Stock Research", "url": "https://github.com/hhhhp52/Tw-Stock", "category": "Personal Project", "description": "Reproducible Taiwan-market research using public TWSE and TPEx datasets for price history, corporate actions, and listed securities analysis." },
+    { "name": "Clinic Promotion", "url": "https://www.health2sync.com/tw/diabetes-clinics", "category": "Professional Product", "description": "A clinic-discovery experience connecting people with diabetes-care providers." },
+    { "name": "Health2Sync", "url": "https://www.health2sync.com/tw", "category": "Professional Product", "description": "A digital diabetes-management platform serving patients and care teams at scale." }
   ],
   "contact": {
     "eyebrow": "Have a role, idea, or technical challenge?",
     "headline": "Let’s turn complexity into",
     "accent": "a system that works.",
-    "linkLabel": "hhhhp52@gmail.com"
+    "linkLabel": "Start a conversation"
   },
   "footer": {
     "note": "Built as a data-driven portfolio.",
